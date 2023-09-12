@@ -1,0 +1,305 @@
+@mainBackgroundColor: #244f67;
+@mainTextColor:white;
+@defaultfont: bold;
+@qCatogaryColor: #949494;
+@contentWidth:1300px;
+@marginCenter:0 auto;
+
+
+@allSection: asections;
+.@{allSection}{
+    width: 100vw;
+  height: 600px;
+  background-color: @mainBackgroundColor;
+  color: @mainTextColor;
+}
+@flexCenterSpBe:flexCSpBe;
+.@{flexCenterSpBe}{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@flexCenterSpAr:flexCSpAr;
+.@{flexCenterSpAr}{
+    .flexCSpBe;
+    justify-content: space-around;
+}
+@hoverfeatureBoth:hoverfeatureBoth;
+.@{hoverfeatureBoth}{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@hoverfeatureUn:hoverfeatureUn;
+.@{hoverfeatureUn}{
+    text-decoration: underline;
+}
+@hoverfeaturePionter:hoverfeaturePi;
+.@{hoverfeaturePionter}{
+    cursor: pointer;
+}
+@navButtonSpace:navButtonSpace;
+.@{navButtonSpace}{
+    padding: 12px 5px;
+}
+@hoverplusminus:hoverpm;
+.@{hoverplusminus}{
+    font-size:40px;
+    margin-right: 10px;
+    content:''
+}
+@multifeatures:mulfeatures;
+.multifeatures(@num1,@num2,@num3,@num4){
+    border:@num1 @num2 @num3 @num4;
+    padding:@num1 @num2 @num3 @num4;
+    margin: @num1 @num2 @num3 @num4;
+}
+
+// <=========================================================>
+body{
+    margin: 0;
+}
+.topSection{
+    .asections;
+    height: 350px;
+}
+.navigation_bar {
+    padding-top: 15px;
+    width: @contentWidth;
+    height: 100px;
+    color: white;
+    .flexCSpBe;
+    margin: @marginCenter;
+  }
+  .navigation_bar > img {
+    width: 300px;
+    margin-right: 200px;
+    vertical-align: middle;
+  }
+  .nav_content {
+    list-style-type: none;
+    .flexCSpAr;
+    vertical-align: middle;
+  }
+  .nav_content > li > a {
+    padding: 0 15px;
+    color: @mainTextColor;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .nav_content > li > a:hover {
+   .hoverfeatureUn;
+  }
+  .nav_content > li:nth-child(5) > a {
+    padding-left: 0;
+  }
+  #circle_icon {
+    display: inline-block;
+    background-color: #47c652;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+  }
+  .nav_content > li:nth-child(6) {
+    background-color: #5f7f90;
+    .navButtonSpace;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .nav_content > li:nth-child(7) {
+    background-color: #f47b21;
+    margin-right: 5px;
+   .navButtonSpace;
+    border-radius: 5px;
+  }
+  .nav_title {
+    width:@contentWidth;
+    margin:@marginCenter;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .nav_title>div:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+//   ---------------------------------------------------
+  .frequentAskedQuestion_Content {
+    width: 100vw;
+    margin-bottom: 100px;
+
+  }
+  .qSections {
+    margin:@marginCenter;
+    width: @contentWidth;
+    margin-top: 60px;
+
+  }
+  .frequentAskedQuestion_Content > h3 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .qSection1 h4 {
+    color: @qCatogaryColor;
+    margin: @marginCenter;
+    width: 1100px;
+  }
+  .qSection1 ul {
+    padding: 0;
+  }
+  .questionLi {
+    display: flex;
+    flex-direction: column;
+  }
+  .qSection1 .question {
+    height: 25px;
+    width: 1100px;
+    .flexCSpBe;
+  }
+  .questionLi .iconplus::after {
+    .hoverpm;
+    content:'+'
+  }
+  .questionLi:hover .iconplus::after {
+    .hoverpm;
+    content: "-";
+    font-size: 50px;
+  }
+  .questionLi .plushoverContent {
+    display: none;
+  }
+  .questionLi:hover .plushoverContent {
+    display: block;
+    background-color: #ebeff4;
+    padding: 20px 15px;
+  }
+  .qSection1 li {
+    border-bottom: 1px solid #aaadb1;
+    width: 1100px;
+    margin: @marginCenter;
+   .flexCSpBe;
+    padding: 15px 0;
+  }
+  .qSection1 li:hover {
+    .hoverfeaturePi;
+  }
+.ending{
+    .asections;
+    background-color:#EEF2F5 ;
+    height: 150px;
+    overflow: hidden;
+}
+.endingContent {
+    font-weight: normal;
+    text-align: center;
+    padding-top: 45px;
+  }
+  .endingContent > svg {
+    vertical-align: middle;
+    margin-left: 10px;
+   
+  }
+  .endingContent > span {
+    margin-right: 5px;
+    font-weight: bold;
+    color :black;
+  }
+  .endingContent > button {
+    background-color: #f47b21;
+    border: none;
+    padding: 15px;
+    margin-left: 5px;
+    color: @mainTextColor;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  
+  .endingContent > button:hover {
+   .hoverfeatureBoth;
+  }
+
+  footer {
+    width: 100vw;
+    margin: @marginCenter;
+    background-color: @mainBackgroundColor;
+    color:@mainTextColor;
+    overflow: hidden;
+  }
+ .weatherStack_logo>img {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 10px 0;
+    margin-left: -10px;
+  }
+  #WS_content {
+    vertical-align: top;
+  }
+  
+  .socialmedia_icon > img {
+    width: 30px;
+    padding-right: 5px;
+  }
+  
+  .weatherStack_logo img:hover {
+    .hoverfeaturePi;
+  }
+  
+  .footer_table {
+    height: 200px;
+    width: @contentWidth;
+    margin: 50px auto;
+  }
+  .footer_table th {
+    text-align: left;
+    height: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .footer_table a {
+    font-weight: normal;
+    height: 2px;
+    color: @mainTextColor;
+    text-decoration: none;
+  }
+  
+  .footer_table a:hover {
+    .hoverfeatureUn;
+  }
+  
+  .footerBar {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 18px;
+  }
+  
+ .footerBar > a {
+    font-weight: normal;
+    color: @mainTextColor;
+    text-decoration: none;
+  }
+  
+.footerBar > a:not(:last-of-type) {
+    border-right: 2px solid white;
+    padding: 0 5px;
+  }
+  
+.footerBar > a:hover {
+    .hoverfeatureUn;
+  }
+  
+  
+  .copyright {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 15;
+    margin-bottom: 50px;
+  }
+  
+  .weatherStack_ico{
+    width: 300px;
+    height: 50px;
+  }

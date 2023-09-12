@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Documentation  - weatherStatck</title>
+    <link rel="stylesheet" href="./documentation .css">
+</head>
+
+<body>
+    <!--START--- Top Section Navigation bar -->
+    <section class="topSection">
+        <nav class="navigation_bar">
+            <a href="../index.html">
+                <img src="../assets/weatherstack_logo_footer_1.png"  class="titleLogo"></img>
+            </a>
+            <ul class="nav_content">
+                <li>
+                    <a href="../pricing/ws_pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a href="../documentation/documentation.html">Documentation</a>
+                </li>
+                <li>
+                    <a href="../FAQ/faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <span id="circle_icon"></span>
+                    <a href="">Status</a>
+                </li>
+                <li>
+                    <a href="">Log In</a>
+                </li>
+                <li>
+                    <a href="">SIGN UP FREE</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!--END----Top Section Navigation bar -->
+    <!--START--- Quickstart & Guide -->
+    <section class="sub_topSection">
+        <div class="sub_topSection_Combine">
+            <div class="quickGcodeE">
+                <div class="sub_quikGcodeE">
+                    <svg t="1681425385863" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8108" width="30" height="30"><path d="M361.365333 670.997333c49.578667 50.389333 55.317333 104.554667 0.362667 160.405334-34.048 34.581333-89.173333 55.36-165.034667 64.256-3.925333 0.469333-7.893333 0.448-11.84-0.021334-26.666667-3.242667-46.144-26.944-44.864-54.016l0.277334-3.541333 1.088-8.96c9.301333-72.32 29.44-125.269333 62.144-158.506667 54.954667-55.829333 108.266667-49.984 157.866666 0.384zM318.4 714.666667c-27.52-27.968-42.773333-29.653333-71.744-0.213334-18.730667 19.029333-32.874667 52.16-41.344 99.498667l-1.344 8.021333-1.557333 10.496 2.496-0.32c49.834667-7.36 85.504-20.629333 107.242666-38.698666l3.477334-3.072 2.944-2.837334c28.992-29.44 27.349333-44.906667-0.170667-72.874666z m514.133333-567.594667a72.042667 72.042667 0 0 1 44.394667 44.864c33.429333 97.664 22.805333 196.608-31.082667 294.698667-22.208 40.405333-50.624 78.656-85.205333 114.730666l-9.578667 9.792-9.066666 8.874667-0.256 2.752c-6.293333 58.752-50.858667 136.448-132.970667 236.906667l-7.125333 8.682666-13.12 15.68c-14.848 17.621333-42.496 12.714667-51.157334-8.106666l-1.024-2.794667-45.909333-146.517333-4.16-2.88a728.938667 728.938667 0 0 1-73.557333-59.989334l-11.413334-10.88-11.178666-11.093333a736.405333 736.405333 0 0 1-88.746667-109.568l-2.538667-3.946667L149.333333 479.936c-21.034667-6.826667-27.818667-32.832-14.464-49.173333l1.770667-2.005334 1.92-1.792c122.965333-107.434667 213.696-160.704 278.677333-156.266666l4.181334 0.362666 2.432 0.298667 5.482666-5.546667c29.482667-29.312 60.352-54.250667 92.629334-74.752l10.794666-6.677333 9.92-5.802667c90.069333-51.072 181.504-63.637333 272.896-36.906666l8.576 2.602666 8.384 2.794667z m-13.866666 63.232a10.304 10.304 0 0 0-3.690667-3.84l-1.536-0.725333-7.68-2.56c-77.461333-24.725333-154.56-15.146667-233.216 29.461333-40.938667 23.232-79.786667 54.549333-116.544 94.08a30.037333 30.037333 0 0 1-29.653333 8.661333l-5.098667-1.642666c-31.573333-9.28-96.362667 21.397333-188.864 95.018666l-11.690667 9.386667 106.709334 34.56c4.842667 1.557333 9.173333 4.309333 12.672 7.978667l2.005333 2.304 1.770667 2.496a677.376 677.376 0 0 0 89.237333 112.64 666.581333 666.581333 0 0 0 100.032 83.413333c4.928 3.349333 8.768 8.085333 11.093333 13.589333l1.024 2.816 32.213334 102.677334 6.186666-7.872c62.890667-80.874667 95.296-141.781333 97.813334-179.498667l0.149333-3.456v-2.986667a31.04 31.04 0 0 1 9.856-23.68c42.837333-39.68 76.522667-81.941333 101.184-126.826666 44.181333-80.426667 53.738667-158.592 29.333333-236.48l-2.56-7.786667-0.746666-1.706667zM690.773333 333.226667c45.909333 45.930667 46.08 120.213333 0.341334 165.930666-45.717333 45.738667-120 45.568-165.930667-0.341333-45.909333-45.930667-46.08-120.213333-0.341333-165.930667 45.717333-45.738667 120-45.568 165.930666 0.341334z m-45.162666 45.162666a53.333333 53.333333 0 0 0-75.434667-0.170666 53.333333 53.333333 0 0 0 0.170667 75.434666 53.333333 53.333333 0 0 0 75.434666 0.170667 53.333333 53.333333 0 0 0-0.170666-75.434667z" fill="#283F59" p-id="8109"></path></svg>
+                    <span>3-Step Quickstart Guide</span>
+                </div>
+                <div>
+                    Feel like jumping right into making API calls? Get a free weatherstack<br> account and simply use our 3-Step Quickstart Guide.
+                </div>
+                <button>GET FREE ACCESS</button>
+            </div>
+            <div class="quickGcodeE codeexample">
+                <div class="sub_quikGcodeE ">
+                    <svg t="1681435627493" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6932" width="30" height="30"><path d="M434.536437 1007.67421m-16.305408 0a16.305408 16.305408 0 1 0 32.610816 0 16.305408 16.305408 0 1 0-32.610816 0Z" fill="#283F59" p-id="6933"></path><path d="M908.208537 176.098406L737.001754 4.891622A16.305408 16.305408 0 0 0 727.218509 0H177.726262A66.852173 66.852173 0 0 0 110.874089 66.852173v890.275273a66.852173 66.852173 0 0 0 66.852173 66.852172h189.142732a16.305408 16.305408 0 0 0 17.120678-16.305408 17.120678 17.120678 0 0 0-17.120678-17.120678H177.726262a33.426086 33.426086 0 0 1-33.426087-33.426086V66.852173A33.426086 33.426086 0 0 1 177.726262 33.426086h540.524273l138.595967 138.595968H741.893376v-70.113254a16.305408 16.305408 0 0 0-17.120678-16.305408 16.305408 16.305408 0 0 0-16.305408 16.305408v86.418662a16.305408 16.305408 0 0 0 16.305408 16.305408h172.022054a16.305408 16.305408 0 0 0 16.305408-16.305408 16.305408 16.305408 0 0 0-4.891623-12.229056zM913.10016 271.485042a16.305408 16.305408 0 0 0-16.305408-16.305408 16.305408 16.305408 0 0 0-17.120679 16.305408v685.642404a33.426086 33.426086 0 0 1-33.426086 33.426086H501.388609a17.120678 17.120678 0 0 0-17.120678 17.120678 16.305408 16.305408 0 0 0 17.120678 16.305408H844.617446a66.852173 66.852173 0 0 0 66.852173-66.852172V271.485042z" fill="#283F59" p-id="6934"></path><path d="M393.940114 440.912233m7.109643 7.86012l8.203434 9.06937q7.109643 7.860121-0.750477 14.969764l-125.157306 113.207396q-7.860121 7.109643-14.969764-0.750478l-8.203434-9.06937q-7.109643-7.860121 0.750477-14.969763l125.157306-113.207396q7.860121-7.109643 14.969764 0.750477Z" fill="#283F59" p-id="6935"></path><path d="M416.452164 673.717021m-7.109643 7.86012l-8.203435 9.06937q-7.109643 7.860121-14.969764 0.750478l-125.157306-113.207396q-7.860121-7.109643-0.750477-14.969764l8.203434-9.06937q7.109643-7.860121 14.969764-0.750477l125.157306 113.207396q7.860121 7.109643 0.750478 14.969763Z" fill="#283F59" p-id="6936"></path><path d="M770.95857 568.607602m-7.109643 7.860121l-8.203435 9.06937q-7.109643 7.860121-14.969764 0.750477l-125.157306-113.207395q-7.860121-7.109643-0.750477-14.969764l8.203434-9.06937q7.109643-7.860121 14.969764-0.750478l125.157306 113.207396q7.860121 7.109643 0.750478 14.969764Z" fill="#283F59" p-id="6937"></path><path d="M748.737286 546.223089m7.109643 7.86012l8.203435 9.06937q7.109643 7.860121-0.750478 14.969764l-125.157306 113.207396q-7.860121 7.109643-14.969764-0.750478l-8.203434-9.06937q-7.109643-7.860121 0.750477-14.969763l125.157307-113.207396q7.860121-7.109643 14.969763 0.750477Z" fill="#283F59" p-id="6938"></path><path d="M453.790611 706.924011m-9.178583-5.299257l-10.590674-6.114528q-9.178583-5.299258-3.879325-14.477841l129.220358-223.816225q5.299258-9.178583 14.477841-3.879326l10.590673 6.114528q9.178583 5.299258 3.879325 14.477841l-129.220357 223.816225q-5.299258 9.178583-14.477841 3.879326Z" fill="#283F59" p-id="6939"></path></svg>
+                    <span>Code Examples</span>
+                </div>
+                <div>
+                    Our API supports all major programming languages. Click below to <br>browse through examples in PHP, Python, Node, jQuery and Ruby.
+                </div>
+                <button>CODE EXAMPLES</button>
+            </div>
+        </div>
+    </section>
+    <!--END--- Quickstart & Guide -->
+    <!--START--- Major Content -->
+    <section class="majorContentContainer">
+        <div class="contentContainer">
+            <div class="sideBar_allfeatures">
+                <ul class="allfeaturesTitle">
+                    <li>Getting Started</li>
+                    <li>API Authentication</li>
+                    <li>HTTPS Encryption</li>
+                    <li>API Error Codes</li>
+                </ul>
+                <ul class="allfeaturesTitle">
+                    <li>API Features</li>
+                    <li>Current Weather</li>
+                    <li>Historical Weather</li>
+                    <li>Historical Time-Series</li>
+                    <li>Weather Forecast</li>
+                    <li>Location Lookup</li>
+                </ul>
+                <ul class="allfeaturesTitle">
+                    <li>Options</li>
+                    <li>Query Parameter</li>
+                    <li>Units Parameter</li>
+                    <li>Language Parameter</li>
+                    <li>JSONP Callbacks</li>
+                </ul>
+                <ul class="allfeaturesTitle">
+                    <li>Code Examples</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Nodejs</li>
+                    <li>jQuery</li>
+                    <li>Go</li>
+                    <li>Ruby</li>
+                </ul>
+                <ul class="allfeaturesTitle githubCat">
+                    <svg t="1681442200950" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2574" width="30" height="30"><path d="M512 0c-282.76736 0-512 229.23264-512 512s229.23264 512 512 512 512-229.23264 512-512-229.23264-512-512-512zM816.04608 816.04608c-39.5264 39.50592-85.504 70.53312-136.704 92.18048-13.0048 5.50912-26.2144 10.32192-39.60832 14.49984l0-76.73856c0-40.32512-13.824-70.00064-41.49248-89.00608 17.32608-1.65888 33.25952-3.9936 47.75936-7.00416s29.83936-7.33184 45.99808-13.0048 30.65856-12.41088 43.49952-20.25472 25.16992-18.00192 37.00736-30.49472 21.74976-26.66496 29.75744-42.496 14.336-34.83648 19.00544-56.99584 7.00416-46.592 7.00416-73.25696c0-51.67104-16.83456-95.66208-50.50368-131.9936 15.33952-39.99744 13.66016-83.49696-4.99712-130.49856l-12.4928-1.49504c-8.66304-1.00352-24.24832 2.6624-46.75584 10.99776s-47.75936 21.99552-75.75552 41.00096c-39.66976-10.99776-80.83456-16.50688-123.4944-16.50688-43.008 0-84.00896 5.50912-123.00288 16.50688-17.67424-12.00128-34.4064-21.9136-50.25792-29.75744s-28.50816-13.16864-37.9904-15.99488-18.3296-4.58752-26.50112-5.24288-13.4144-0.83968-15.74912-0.49152-3.9936 0.67584-4.99712 1.00352c-18.65728 47.32928-20.33664 90.8288-4.99712 130.49856-33.66912 36.33152-50.50368 80.34304-50.50368 131.9936 0 26.66496 2.33472 51.07712 7.00416 73.25696s10.99776 41.1648 19.00544 56.99584 17.92 30.0032 29.75744 42.496 24.1664 22.67136 37.00736 30.49472 27.3408 14.58176 43.49952 20.25472 31.49824 9.99424 45.99808 13.0048 30.4128 5.3248 47.75936 7.00416c-27.3408 18.65728-41.00096 48.3328-41.00096 89.00608l0 78.2336c-15.09376-4.48512-29.98272-9.80992-44.60544-15.99488-51.2-21.64736-97.19808-52.67456-136.704-92.18048s-70.53312-85.504-92.18048-136.704c-22.40512-52.96128-33.75104-109.2608-33.75104-167.34208s11.3664-114.3808 33.75104-167.34208c21.64736-51.2 52.67456-97.19808 92.18048-136.704s85.504-70.53312 136.704-92.18048c52.96128-22.40512 109.2608-33.75104 167.34208-33.75104s114.3808 11.3664 167.34208 33.75104c51.2 21.64736 97.19808 52.67456 136.704 92.18048s70.53312 85.504 92.18048 136.704c22.40512 52.96128 33.75104 109.2608 33.75104 167.34208s-11.3664 114.3808-33.75104 167.34208c-21.64736 51.2-52.67456 97.19808-92.18048 136.704z" fill="#2c2c2c" p-id="2575"></path></svg>
+                    <li>weatherstack on GitHub</li>
+                </ul>
+            </div>
+            <div class="majorContent">
+                <div class="content">
+                    <div class="content_themetitle">API Documentation</div>
+                    <div class="content_explaination">Welcome to the weatherstack API documentation. Using the instructions and interactive code examples below you will be able to start making API requests in a matter of minutes. If you have an account already and prefer to skip our detailed
+                        documentation, you can also jump to our <a href="">3-Step Quickstart Guide</a> right away.</div>
+                    <div class="content_explaination_theme">
+                        The weatherstack API was built to deliver accurate weather data for any application and use case, from real-time and historical weather information all the way to 14-day weather forecasts, supporting all major programming languages. Our straightforward
+                        API design will make it easy to use the API — continue reading below to get started.</div>
+                </div>
+                <div class="content">
+                    <div class="content_themetitle">Getting Started</div>
+                    <div class="content_title">API Authentication</div>
+                    <div class="content_explaination">
+                        The first step to using the API is to authenticate with your weatherstack account's unique API access key, which can be found in your account dashboard after registration. To authenticate with the API, simply use the base URL below and pass your API
+                        <span class="highlight_red">access key</span> to the API's access_key parameter.</div>
+                    <h4 class="exampleDisplay_title">Example API Request:</h4>
+                    <div class="exampleDisplay">
+                        <div>Sign Up to Run API Request</div>
+                        <p>https://api.weatherstack.com/current</p>
+                        <p> ? access_key = YOUR_ACCESS_KEY</p>
+                        <p> & query = New York</p>
+                    </div>
+                    <div class="keeepSafe">Keep it safe: Please make sure to keep your API access key and do not expose it in any publicly available part of your application. If you ever want to reset your key, simply head over to your account dashboard to do so.</div>
+                </div>
+                <div class="content">
+                    <div class="content_title">256-bit HTTPS Encryption
+                        <span id="sub_content_title">Available on: Standard Plan and higher</span>
+                    </div>
+                    <div class="content_explaination">
+                        Clients using the Standard Plan or higher can connect to the weatherstack using industry-standard SSL (HTTPS) by attaching an <span class="highlight_red">s</span> to the HTTP protocol as shown in the example API request below.</div>
+                    <h4 class="exampleDisplay_title">Example API Request:</h4>
+                    <div class="exampleDisplay">
+                        <p>https:<span>://api.weatherstack.com/...</span></p>
+                    </div>
+                    <div class="content_explaination">If you are currently on the Free Plan and would like to use the HTTPS API in production, please <a href="">upgrade your account</a>. You can also learn more about available plans on our<a href="">Pricing Overview.</a></div>
+                    <div class="keeepSafe">Keep it safe: Please make sure to keep your API access key and do not expose it in any publicly available part of your application. If you ever want to reset your key, simply head over to your account dashboard to do so.</div>
+                </div>
+                <div class="content">
+                    <div class="content_title">API Error Codes </div>
+                    <div class="content_explaination">
+                        Whenever an API request fails, the weatherstack API will return an error object in lightweight JSON format. Each error object contains an error code, an error type and an info object containing details about the error that occurred. Below you will find
+                        an example error as well as a list of common API errors.</div>
+                    <h4 class="exampleDisplay_title">Example API Request:</h4>
+                    <div class="exampleDisplay_img apierrorimg">
+                    </div>
+                    <h4 class="exampleDisplay_title">Common API Errors:</h4>
+                    <table class="commonErrors">
+                        <tr class="commonErrors_head">
+                            <th>Code</th>
+                            <th>Type</th>
+                            <th>Info</th>
+                        </tr>
+                        <tr>
+                            <td><span class="commonErrors_code">404</span></td>
+                            <td><span class="commonErrors_code">404_not_found</span></td>
+                            <td>User requested a resource which does not exist.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="commonErrors_code">101</span></td>
+                            <td><span class="commonErrors_code">missing_access_key</span></td>
+                            <td>User did not supply an access key.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="commonErrors_code">101</span></td>
+                            <td><span class="commonErrors_code">invalid_access_key</span></td>
+                            <td>User supplied an invalid access key.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="commonErrors_code">102</span></td>
+                            <td><span class="commonErrors_code">inactive_user</span></td>
+                            <td>User account is inactive or blocked.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="commonErrors_code">103</span></td>
+                            <td><span class="commonErrors_code">invalid_api_function</span></td>
+                            <td>User requested a non-existent API function.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="commonErrors_code">104</span></td>
+                            <td><span class="commonErrors_code">usage_limit_reached</span></td>
+                            <td>User has reached his subscription's monthly request allowance.</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="content">
+                    <div class="content_themetitle">API Features</div>
+                    <div class="content_title">Current Weather
+                        <span id="sub_content_title">Available on: All plans</span>
+                    </div>
+                    <div class="content_explaination">
+                        To query the weatherstack API for real-time weather data in a location of your choice, simply attach your preferred location to the API's <span class="highlight_red">current</span> endpoint as seen in the example request below.
+                        Depending on your subscription, you can also make a bulk location request by passing multiple semicolon-separated locations to the API URL.</div>
+                    <h4 class="exampleDisplay_title">Example API Request:</h4>
+                    <div class="exampleDisplay" style="overflow-x: scroll;">
+                        <div>Sign Up to Run API Request</div>
+                        <p style="color: white;">https://api.weatherstack.com <span style="color:yellow;">/current</span></p>
+                        <p style="color: white;"> ? access_key = YOUR_ACCESS_KEY</p>
+                        <p style="color:yellow;"> & query = New York</p>
+
+                    </div>
+                    <h4 class="exampleDisplay_title">HTTP GET Request Parameters:</h4>
+                    <table class="commonErrors">
+                        <tr class="commonErrors_head">
+                            <th class="widercells">Object</th>
+                            <th></th>
+                            <th>Description</th>
+
+                        </tr>
+                        <tr>
+                            <td class="widercells"><span class="commonErrors_code">access_key</span></td>
+                            <td></td>
+                            <td><span style="font-weight: bold;">[Required] </span>Your API access key, which can be found in your <a href="" style="text-decoration: underline;">acccount dashboard</a>.</td>
+                        </tr>
+                        <tr>
+                            <td class="widercells"><span class="commonErrors_code">query</span></td>
+                            <td></td>
+                            <td><span style="font-weight: bold;">[Required] </span>Use this parameter to pass a single location or multiple semicolon-separated location identifiers to the API. Learn more about the <a href="" style="text-decoration: underline;">Query Parameter</a>.</td>
+                        </tr>
+                        <tr>
+                            <td class="widercells"><span class="commonErrors_code">units</span></td>
+                            <td></td>
+                            <td>[Optional] Use this parameter to pass one of the unit identifiers ot the API:
+                                <ul>
+                                    <li style="list-style-type:disc;">m for Metric</li>
+                                    <li style="list-style-type:disc;">s for Scientific</li>
+                                    <li style="list-style-type:disc;">f for Fahrenheit</li>
+                                </ul>
+                                Learn more about the Units Parameter.</td>
+                        </tr>
+                    </table>
+                    <h4 class="exampleDisplay_title">HTTP GET Request Parameters:</h4>
+                    <div class="content_explaination">The successful API request from the example above now returns real-time weather data for the city of New York, including detailed information about temperature, humidity, wind, clouds, pressure, the current time, a series of location
+                        identifiers, and more.</div>
+                    <div class="exampleDisplay_img apiResonseimg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--START--- Ending Question, technical questions left? -->
+    <section class="ending ">
+        <div class="endingContent ">
+            <span>Any technical questions left? Reach out to us, our team is happy to help. </span>
+            <button>CONTACT US</button>
+        </div>
+    </section>
+    <!--END--- Ending Question, technical questions left? -->
+</body>
+<footer>
+    <table class="footer_table ">
+        <tr>
+            <th rowspan="8 " id="WS_content ">
+                <div class="weatherStack_logo ">
+                    <a href="../index.html">
+
+                        <img id="weatherStack_icon " src="../assets/weatherstack_logo_footer_1.png " />
+                    </a>
+                    <div class="socialmedia_icon ">
+                        <img src="../assets/github-mark-white.png " alt=" ">
+                        <img src="../assets/fbimage.png " alt=" ">
+                        <img src="../assets/2048px-Instagram_icon.png " alt=" ">
+                        <img src="../assets/youtubeicon.png " alt=" ">
+                        <img src="../assets/twitterIcon.png " alt=" ">
+                        <img src="../assets/linkedInIcon.png " alt=" ">
+                    </div>
+                </div>
+            </th>
+            <th>PRODUCT</th>
+            <th>DOCS & HELP</th>
+            <th>ACCOUNT</th>
+            <th>GET IN TOUCH</th>
+        </tr>
+        <tr>
+
+            <td>
+                <a href="../pricing/ws_pricing.html ">Pricing</a>
+            </td>
+            <td>
+                <a href="../documentation/documentation.html ">Documentation</a></td>
+            <td>
+                <a href="">Log In</a></td>
+            <td>
+                <a href="">Contact</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="">List Your API</a></td>
+            <td>
+                <a href="">Blog</a></td>
+            <td>
+                <a href="">Forgot Password</a></td>
+            <td>
+                <a href="">Get a quote</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="../FAQ/faq.html">Why choose us?</a></td>
+            <td>
+                <a href="../FAQ/faq.html">FAQs</a></td>
+            <td>
+                <a href="">FREE Signup</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="">Marketplace</a></td>
+            <td>
+                <a href="">Press</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a href="">API Glossary</a></td>
+        </tr>
+    </table>
+    <div class="footerBar ">
+        <a href="">Imprint / Legal</a>
+        <a href="">Privacy</a>
+        <a href=""> Terms</a>
+        <a href="">Cookie Preference</a>
+        <a href="" >Sitemap</a>
+    </div>
+    <p class="copyright ">&#169 2022 Weatherstack API, an APILayer product.All rights reserved.</p>
+</footer>
+
+
+
+</html>

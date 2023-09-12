@@ -1,0 +1,661 @@
+* {
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.top_Section {
+  width: 100vw;
+  color: white;
+  margin: 0 auto;
+  background-color: #2f5b72;
+}
+
+nav {
+  width: 1300px;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 30px;
+  align-items: center;
+}
+
+nav img {
+  width: 200px;
+  margin-right: 200px;
+}
+
+nav img:hover {
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.circleStatus {
+  display: flex;
+  align-items: center;
+}
+
+#circle_icon {
+  background-color: #47c652;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.nav_butt {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.nav_butt:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#login {
+  background-color: #4c6c7c;
+  margin-right: 10px;
+}
+
+#signup {
+  background-color: #f47b21;
+}
+
+/* <-------------------------------------Content------------------------------------------------------> */
+
+.content {
+  width: 1300px;
+  display: flex;
+  margin: 0 auto;
+  padding: 150px 0;
+  justify-content: space-between;
+}
+
+.awardBar {
+  background-color: #396178;
+  width: fit-content;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 0 15px;
+}
+
+.awardBar > span::before {
+  display: inline-block;
+  content: "";
+  background: url(./assets/champion.png) no-repeat;
+  margin-top: 5px;
+  width: 40px;
+  height: 45px;
+  vertical-align: middle;
+}
+
+.startBar {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  margin-top: 40px;
+}
+
+#useAPIButton {
+  width: 250px;
+  border: none;
+  background-color: #f47b21;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#useAPIButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#subButton:hover {
+  cursor: pointer;
+}
+
+#free {
+  font-family: Cursive;
+  padding: 10px;
+}
+
+.weatherBoardContainer {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.weatherBoard {
+  width: 450px;
+  height: 300px;
+  border: 5px solid #608094;
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: #16394c;
+  justify-content: space-evenly;
+}
+
+#location {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.currentWeather {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#weatherStatus {
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+#icon {
+  width: fit-content;
+}
+
+.temperature {
+  font-size: 20px;
+  padding: 0;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+}
+
+.detail {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.weatherTable {
+  padding: 20px 0 20px 0;
+  margin-top: 20px;
+}
+
+.weatherTable_detail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weatherTable tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherTable th {
+  text-align: center;
+  width: 85px;
+}
+
+.weatherTable td {
+  width: 85px;
+  display: flex;
+  justify-content: center;
+}
+
+/* <--------------------------------------03/31 Homework---------------------------------------------------------------------------> */
+
+.middle_Section {
+  width: 100vw;
+}
+
+.companyiconContainer {
+  background-color: #eff2f5;
+}
+
+.companyIcon {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.companyIcon div {
+  line-height: 100px;
+  padding-left: 10px;
+}
+
+.explanationBoxes {
+  width: 1300px;
+  margin: 20px auto;
+  padding: 60px 20px;
+  display: flex;
+  background-color: #eff2f5;
+  justify-content: space-evenly;
+}
+
+.explanationBoxes div {
+  width: 280px;
+  height: 200px;
+  font-weight: normal;
+}
+
+.globalWeather {
+  display: flex;
+  width: 1300px;
+  height: 500px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+.globalWeather_content {
+  width: 450px;
+}
+
+.globalWeather_content h3 {
+  font-size: 27px;
+}
+
+.globalWeather_content p {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+#world_Weather {
+  width: 850px;
+}
+
+.API {
+  height: 250px;
+}
+
+.API > li {
+  list-style-type: none;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+.realtime_API::before {
+  display: inline-block;
+  margin-right: 10px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(./assets/efb7d3d713bb7eeafa5d023bbf3e6eb.png) no-repeat;
+  background-size: 100%;
+}
+
+.historical_API::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(./assets/a7982b6ff12fd1c426bec39933a47cb.png) no-repeat;
+  background-size: 100%;
+  margin-right: 10px;
+}
+
+.forecasts_API::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(./assets/f3efc26da49e90a8c0feb9b82adb6ec.png) no-repeat;
+  background-size: 100%;
+  margin-right: 10px;
+}
+
+.autocomplete_API::before {
+  display: inline-block;
+  content: "";
+  width: 35px;
+  height: 35px;
+  background: url(./assets/a74cb645ccba9d14a3c454602022f53.png) no-repeat;
+  background-size: 90%;
+  margin-right: 8px;
+}
+
+.bulk_API::before {
+  display: inline-block;
+  content: "";
+  width: 35px;
+  height: 35px;
+  background: url(./assets/f0190300a62305ee05f4a322a702f4e.png) no-repeat;
+  background-size: 100%;
+  margin-right: 8px;
+}
+
+/* <--------------------------------------------------------------------04/03 Homework -----------------------------------------> */
+
+.bottom_section {
+  width: 100vw;
+  background-color: #2e5367;
+}
+
+.bottomContainer {
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.bottom_content_heading {
+  color: white;
+  text-align: center;
+}
+
+#heading1 {
+  background-color: #416376;
+  border-radius: 20px;
+  padding: 10px 0;
+  width: 110px;
+  margin: 0 auto;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.bottom_content > h2 {
+  font-weight: normal;
+}
+
+.weatherSelection {
+  width: 1080px;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.weatherSelection > div {
+  color: white;
+  padding: 20px 70px;
+}
+
+#selection1 {
+  background-color: #f47b21;
+  border-radius: 10px 0 0 10px;
+}
+
+#selection3 {
+  border-radius: 0 10px 10px 0;
+  color: #283f59;
+}
+
+.weatherSelection div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.display_code {
+  height: 950px;
+  width: 1080px;
+}
+
+.display_code > img {
+  display: block;
+  margin: 0 auto;
+  width: 810px;
+}
+
+.boxes_lineOne,
+.boxes_lineTwo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxes_lineOne > div {
+  width: 350px;
+  height: 120px;
+  background-color: #657f90;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.boxes_lineOne {
+  margin-bottom: 15px;
+}
+
+.boxes_lineTwo {
+  margin-bottom: 50px;
+}
+
+.boxes_lineTwo > div {
+  background-color: #657f90;
+  width: 350px;
+  height: 120px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.bottom_boxes {
+  width: 1080px;
+  color: white;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.bottom_boxes h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.bottom_boxes h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+#reliable_heading::before {
+  display: inline-block;
+  content: "";
+  background: url(./assets/reliable.PNG) no-repeat;
+  width: 30px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#lightning_heading::before {
+  display: inline-block;
+  content: "";
+  background: url(./assets/lightning.PNG) no-repeat;
+  width: 30px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#scalable_heading::before {
+  display: inline-block;
+  content: "";
+  background: url(./assets/scalable.PNG) no-repeat;
+  width: 30px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#flexible_heading::before {
+  display: inline-block;
+  content: "";
+  background: url(./assets/flexible.PNG) no-repeat;
+  width: 30px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#bank_heading::before {
+  display: inline-block;
+  content: "";
+  background: url(./assets/bank.PNG) no-repeat;
+  width: 30px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#extensive_heading::before {
+  display: inline-block;
+  content: "";
+  background: url(./assets/extensive.PNG) no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.billBoard_partner {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.billBoard_partner h1 {
+  text-align: center;
+}
+
+.billBoard_partner h2 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.brandOne {
+  display: flex;
+  margin-top: 50px;
+}
+
+.brandTwo {
+  display: flex;
+}
+
+.ending {
+  width: 100vw;
+  background-color: #eef2f5;
+  height: 150px;
+}
+
+.endingContent {
+  font-weight: normal;
+  text-align: center;
+  padding-top: 45px;
+  margin-top: 50px;
+}
+
+.endingContent > span {
+  margin-right: 5px;
+}
+
+.endingContent > img {
+  vertical-align: middle;
+  color: white;
+}
+
+.endingContent > button {
+  background-color: #f47b21;
+  border: none;
+  padding: 15px;
+  margin-left: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.endingContent > button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* <------------------------------------------Footer--------------------------------------------------------> */
+
+footer {
+  width: 100vw;
+  margin: 0px auto;
+  background-color: #2f5b72;
+  color: white;
+  overflow: hidden;
+}
+
+#weatherStack_icon {
+  display: block;
+  width: 200px;
+  margin: 10px 0;
+}
+
+#WS_content {
+  vertical-align: top;
+}
+
+.socialmedia_icon > img {
+  width: 30px;
+  padding-right: 5px;
+}
+
+.weatherStack_logo img:hover {
+  cursor: pointer;
+}
+
+.footer_table {
+  height: 200px;
+  width: 1080px;
+  margin: 50px auto;
+}
+
+.footer_table th {
+  text-align: left;
+  height: 30px;
+  padding-bottom: 10px;
+}
+
+.footer_table a {
+  font-weight: normal;
+  height: 2px;
+}
+
+.footer_table a:hover {
+  text-decoration: underline;
+}
+
+#bar {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 18px;
+}
+
+#bar > a {
+  font-weight: normal;
+}
+
+#bar > a:not(:last-of-type) {
+  border-right: 2px solid white;
+  padding: 0 5px;
+}
+
+#bar > a:hover {
+  text-decoration: underline;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 15;
+  margin-bottom: 50px;
+}
